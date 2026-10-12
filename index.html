@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff7f8">
+<title>Хулангаас Ka-д ♡</title>
+<style>
+:root{--rose:#c45b76;--pink:#f4cbd4;--ink:#402d34;--cream:#fff8f6;--muted:#8c747b;--line:#f0dce1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:clamp(9px,2.4vw,24px);flex-wrap:wrap;padding:14px 10px;background:#fff8f6ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);font:11px Arial,sans-serif;letter-spacing:.06em}nav a{text-decoration:none;color:#765761}
+.hero{min-height:83vh;display:grid;place-items:center;text-align:center;padding:55px 20px;background:radial-gradient(ellipse at 20% 20%,#f8dfe5 0,transparent 36%),radial-gradient(ellipse at 85% 75%,#f6e3df 0,transparent 35%),var(--cream)}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--rose)}h1{font-size:clamp(45px,9vw,94px);font-weight:400;line-height:1.02;margin:20px 0;color:#6b3547;letter-spacing:-.04em}h1 em{color:var(--rose);font-weight:400}.heart{font-size:26px;color:var(--rose);animation:beat 1.8s infinite}@keyframes beat{50%{transform:scale(1.18)}}.hero p{font:14px/1.9 Arial,sans-serif;color:var(--muted);max-width:480px;margin:20px auto 27px}
+.btn{display:inline-block;background:var(--rose);color:white;border:0;border-radius:999px;padding:13px 22px;text-decoration:none;font:11px Arial,sans-serif;letter-spacing:.08em;cursor:pointer}.btn:hover{background:#a94662}
+section{padding:72px 20px;max-width:1020px;margin:auto}.head{text-align:center;margin-bottom:32px}.head h2{font-size:clamp(30px,5vw,45px);font-weight:400;color:#6b3547;margin:12px 0}.head p,.small{font:13px/1.8 Arial,sans-serif;color:var(--muted);max-width:580px;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card{border:1px solid var(--line);background:white;border-radius:8px;padding:19px;min-height:145px}.card .num{font:10px Arial,sans-serif;letter-spacing:.12em;color:var(--rose)}.card h3{font-size:19px;font-weight:400;margin:10px 0;color:#793d52}.card p{font:13px/1.75 Arial,sans-serif;color:#806872;margin:0}
+.daily{max-width:660px;margin:auto;background:white;border:1px solid var(--line);border-radius:9px;padding:clamp(24px,5vw,42px);text-align:center;box-shadow:0 16px 55px #8d42520b}.day-label{font:11px Arial,sans-serif;letter-spacing:.13em;color:var(--rose)}.day-title{font-size:clamp(25px,5vw,36px);font-weight:400;color:#783b50;margin:16px 0}.day-text{font-size:16px;line-height:1.9;color:#70545e;min-height:70px}.day-actions{display:flex;justify-content:center;align-items:center;gap:11px;flex-wrap:wrap;margin-top:22px}.round{border:1px solid #e8c8d1;background:#fff7f8;border-radius:50%;width:42px;height:42px;color:var(--rose);font-size:20px;cursor:pointer}.pill{border:1px solid var(--line);border-radius:99px;padding:9px 13px;font:11px Arial,sans-serif;color:#8b6974}
+.note{background:white;border:1px solid var(--line);padding:clamp(24px,6vw,48px);max-width:740px;margin:auto;box-shadow:0 16px 55px #8d42520b}.note h3{font-size:28px;font-weight:400;color:#783b50;margin:0 0 18px}.note p{font-size:16px;line-height:1.95;color:#70545e;white-space:pre-line}.signature{font-style:italic;color:var(--rose);font-size:21px;margin-top:20px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.photo{overflow:hidden;border-radius:7px;background:#f4dfe4;aspect-ratio:4/5;position:relative}.photo img{width:100%;height:100%;object-fit:cover}.photo span{position:absolute;bottom:0;left:0;right:0;padding:28px 12px 12px;color:white;font:12px Arial,sans-serif;background:linear-gradient(transparent,#2b121ba8)}
+.counter-wrap{background:#f8e7eb;border-radius:8px;padding:32px 14px;text-align:center}.counter{display:flex;justify-content:center;gap:clamp(12px,4vw,32px);flex-wrap:wrap;margin:22px 0}.count strong{display:block;font-size:clamp(32px,6vw,50px);font-weight:400;color:#a64b66}.count span{font:10px Arial,sans-serif;letter-spacing:.14em;color:#8b6974}
+.music{max-width:600px;margin:auto;text-align:center;background:white;border:1px solid var(--line);border-radius:8px;padding:30px 18px}.vinyl{width:95px;height:95px;border-radius:50%;margin:0 auto 18px;background:repeating-radial-gradient(circle,#3c2931 0 2px,#5c414a 3px 5px);display:grid;place-items:center}.vinyl:after{content:"♡";display:grid;place-items:center;width:31px;height:31px;background:#e9a6b8;border-radius:50%;color:white}
+.lock{max-width:550px;margin:auto;background:white;border:1px solid var(--line);padding:30px 20px;text-align:center;border-radius:8px}.lock input{width:min(100%,260px);padding:12px;border:1px solid #e7cbd3;border-radius:5px;margin:10px 6px 10px 0}.secret{display:none;text-align:left;background:#fff7f8;border-radius:6px;padding:22px;margin-top:18px;font:14px/1.9 Arial,sans-serif}.secret.show{display:block}.msg{font:12px Arial,sans-serif;color:var(--rose);min-height:18px}
+footer{text-align:center;padding:40px 15px;border-top:1px solid var(--line);font:12px/1.8 Arial,sans-serif;color:var(--muted)}footer b{color:var(--rose);font-weight:400}
+@media(max-width:650px){nav{gap:9px;font-size:10px}.cards{grid-template-columns:1fr}.card{min-height:0}.gallery{grid-template-columns:repeat(2,1fr)}.photo:last-child{display:none}section{padding:56px 17px}.note p{font-size:15px}}
+</style>
+</head>
+<body>
+<nav><a href="#reasons">365 ШАЛТГААН</a><a href="#daily">ӨДӨР БҮРИЙН ҮГ</a><a href="#letter">ЗАХИА</a><a href="#memories">ДУРСАМЖ</a><a href="#song">ДУУ</a><a href="#time">ХУГАЦАА</a><a href="#secret">НУУЦ</a></nav>
+<header class="hero"><div><div class="eyebrow">With all my love — Khulan</div><h1>Хулангаас<br><em>Ka-д.</em> ♡</h1><div class="heart">♡</div><p>Миний хамгийн хайртай хүнд зориулсан жижигхэн ертөнц.<br>Ka минь, өдөр бүр чамайг хайрлах шинэ шалтгаан бий.</p><a class="btn" href="#daily">ӨНӨӨДРИЙН ХАЙРЫН ҮГ ♡</a></div></header>
+<section id="reasons"><div class="head"><div class="eyebrow">01 — little reasons, every day</div><h2>Би чамайг хайрлах 365 шалтгаан</h2><p>Ka минь, өдөр бүр нэгийг нь уншаарай. Чамайг хайрлах шалтгаан хэзээ ч дуусахгүй. ♡</p></div><div class="cards" id="reasonCards"></div><p class="small" style="text-align:center;margin-top:18px">Энд өдөр бүрийн жижигхэн хайр, халамж, дурсамжийг багтаалаа.</p></section>
+<section id="daily"><div class="head"><div class="eyebrow">02 — a little love note</div><h2>Өдөр бүр чамайг хайрлана</h2><p>Өнөөдрийн огноонд таарсан үг автоматаар гарна. Өмнөх болон дараагийн өдрүүдийг ч үзэж болно.</p></div><div class="daily"><div class="day-label" id="dateLabel">ӨНӨӨДРИЙН ҮГ</div><div class="day-title" id="dayTitle">Ka минь, чи миний дуртай хүн.</div><div class="day-text" id="dailyText"></div><div class="day-actions"><button class="round" id="prevDay" aria-label="Өмнөх өдөр">‹</button><span class="pill" id="dayNumber">1 / 365</span><button class="round" id="nextDay" aria-label="Дараагийн өдөр">›</button><button class="btn" id="todayBtn">ӨНӨӨДӨР РҮҮ</button></div></div></section>
+<section id="letter"><div class="head"><div class="eyebrow">03 — from Khulan, with love</div><h2>Ka-даа бичсэн захиа</h2></div><article class="note"><h3>Миний Ka, ♡</h3><p>Ka минь,
+
+Чамд зориулж энэ жижигхэн ертөнцийг бүтээлээ. Чамайг өдөр бүр инээлгэж, хайрлагдаж байгаагаа мэдрүүлэх ямар нэгэн зүйл хиймээр санагддаг болохоор энэ захиагаа чамд үлдээж байна.
+
+Чиний инээмсэглэл, надтай ярилцах үеийн чинь төрх, заримдаа өхөөрдөм зан гаргах чинь, өөрийнхөөрөө байдаг чинь — энэ бүхэн чамайг миний хувьд онцгой болгодог. Чамтай хамт байхдаа заавал том зүйл хийх шаардлагагүй. Энгийн өдөр, энгийн яриа, хамтдаа инээх мөч хүртэл дурсамж болдог.
+
+Би чамайг зөвхөн баяртай, бүх зүйл сайхан үед чинь биш, ядарсан, гунигтай, өөртөө эргэлзсэн үед чинь ч сонсож ойлгохыг хүсдэг. Чи бүхнийг төгс хийх албагүй. Чи өөрийнхөөрөө байхад л хайрлагдах үнэ цэнтэй хүн.
+
+Өдөр бүр би чамайг хайрлах шинэ шалтгаан олмоор байна. Өнөөдөр чиний инээмсэглэл байж болно, маргааш хамтдаа бүтээх дурсамж, нөгөөдөр чиний мөрөөдөл, эсвэл зүгээр л чи өөрөө байж болно.
+
+Энэ website-ийг нээх бүрдээ ганцхан зүйлийг санаарай: чамд зориулж бодож, чамайг баярлуулахыг хүссэн хүн бий. Хайр гэдэг зөвхөн гоё үг биш, өдөр бүрийн жижиг халамж, хүндлэл, сонсох сэтгэл гэж би боддог. Чамд тийм хайрыг мэдрүүлэхийг хүсэж байна.
+
+Хайртай шүү, Ka минь. Өнөөдөр ч, маргааш ч, дараагийн өдрүүдэд ч. ♡</p><div class="signature">Үргэлж чамайг хайрлах, Хулангаас ♡</div></article></section>
+<section id="memories"><div class="head"><div class="eyebrow">04 — our little world</div><h2>Бидний дурсамж</h2><p>Жишээ зургуудыг өөрсдийн зураг, хамтдаа өнгөрүүлсэн мөчүүдээр солиорой.</p></div><div class="gallery"><div class="photo"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=85" alt="Хосын дурсамж"><span>Чамтай байх мөч бүр ♡</span></div><div class="photo"><img src="https://images.unsplash.com/photo-1529339900349-7e7a9a5e1c3a?auto=format&fit=crop&w=800&q=85" alt="Хайрын дурсамж"><span>Чамтай инээх дуртай</span></div><div class="photo"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=85" alt="Хамтдаа"><span>Бидний дараагийн дурсамж</span></div></div></section>
+<section id="song"><div class="head"><div class="eyebrow">05 — our song</div><h2>Бидний дуу</h2><p>Дуугаа дараа нь нэмэхэд бэлэн.</p></div><div class="music"><div class="vinyl"></div><h3 style="font-size:24px;font-weight:400">A song for Ka ♡</h3><p class="small">Дараа нь MP3 дуугаа website-тэй нэг хавтсанд хийгээд SETTINGS дотор songUrl: "oursong.mp3" гэж бичээрэй.</p><audio id="audio" controls style="display:none;width:100%;margin-top:16px"></audio><p id="audioHint" class="small">Энд одоогоор дуу нэмээгүй байна — дараа тохируулж болно.</p></div></section>
+<section id="time"><div class="head"><div class="eyebrow">06 — every moment counts</div><h2>Бидний хамтдаа өнгөрүүлсэн хугацаа</h2><p>2026 оны 10-р сарын 1-нээс хойш тоолно. ♡</p></div><div class="counter-wrap"><div class="eyebrow">Since October 1, 2026</div><div class="counter"><div class="count"><strong id="days">—</strong><span>ӨДӨР</span></div><div class="count"><strong id="hours">—</strong><span>ЦАГ</span></div><div class="count"><strong id="minutes">—</strong><span>МИНУТ</span></div><div class="count"><strong id="seconds">—</strong><span>СЕКУНД</span></div></div><p class="small" id="counterLabel"></p></div></section>
+<section id="secret"><div class="head"><div class="eyebrow">07 — just between us</div><h2>Зөвхөн Ka-д ♡</h2><p>Зөвхөн чи мэдэх нууц үгээ оруулаад захиаг нээгээрэй.</p></div><div class="lock"><div style="font-size:30px;color:#c45b76">♡</div><h3 style="font-weight:400">Нууц үгээ мэдэж байна уу?</h3><form id="secretForm"><input id="pw" type="password" placeholder="Нууц үг..." autocomplete="off"><button class="btn" type="submit">НЭЭХ ♡</button></form><div id="msg" class="msg"></div><div id="secretText" class="secret"><b>Миний Ka,</b><p>Чамайг баярлуулах гэж хийсэн энэ жижигхэн нууцыг нээсэнд баярлалаа. Өөрийгөө хэзээ ч дутуу үнэлж болохгүй шүү. Чи хайр, хүндлэл, халамжийг хүртэх үнэ цэнтэй хүн. Би чамд үүнийг өдөр бүр сануулахыг хүсдэг. Хайртай шүү. ♡</p><div style="text-align:right;color:#c45b76">— Хулан</div></div></div><p class="small" style="text-align:center;margin-top:16px">Анхаарах нь: нууц үг кодонд хадгалагддаг тул энэ нь жинхэнэ хамгаалалт биш, зөвхөн романтик жижиг тоглоом юм.</p></section>
+<footer>Хулангаас Ka-д — бүх хайраа шингээв <b>♡</b><br>Өдөр бүр нэг шалтгаан. Өдөр бүр нэг шинэ дурсамж.</footer>
+<script>
+/* ТОХИРГОО */
+const SETTINGS={nickname:"Ka",togetherSince:"2026-10-01T00:00:00",password:"khulanlove",songUrl:""};
+const reasons=[
+"Чиний инээмсэглэл миний өдрийг гэрэлтүүлдэг.","Чи өөрийнхөөрөө байхдаа хамгийн хөөрхөн.","Чиний дуу хоолой надад тайвшрал өгдөг.","Чи жижиг зүйлсийг хүртэл онцгой болгож чаддаг.","Чамтай ярилцахад цаг хурдан өнгөрдөг.","Чи намайг илүү сайн хүн болохыг хүсүүлдэг.","Чиний нүдэнд байдаг дулаахан мэдрэмж.","Чи баярлахдаа үнэхээр хөөрхөн.","Чи өөрийн бодол, мөрөөдөлтэй хүн.","Чиний хажууд би тайван байж чаддаг.","Чи намайг сонсохыг хичээдэг.","Чиний инээд надад халдварладаг.","Чи энгийн өдрийг дурсамж болгож чаддаг.","Чамд санаа тавих надад сайхан санагддаг.","Чи өөрийнхөөрөө үзэсгэлэнтэй.","Чиний мессеж ирэхэд би баярладаг.","Чи намайг инээлгэж чаддаг.","Чи миний өдрийн нэг сайхан хэсэг.","Чиний мөрөөдлийг сонсох дуртай.","Чамтай хамт шинэ зүйл туршмаар байдаг.","Чи надад хайр гэж юу болохыг илүү ойлгуулдаг.","Чиний хичээл зүтгэлийг би үнэлдэг.","Чи ядарсан үедээ ч үнэ цэнтэй хэвээрээ.","Чи гунигтай үедээ ч хайрлагдах эрхтэй.","Чиний жижигхэн зуршлууд надад дотно.","Чи өөрийнхөөрөө инээхэд ертөнц зөөлөн санагддаг.","Чиний аз жаргал надад чухал.","Чамтай хамт алхах энгийн мөч хүртэл гоё.","Чи надад итгэл найдвар төрүүлдэг.","Чи надад хайртайгаа жижиг үйлдлээр мэдрүүлдэг.","Чиний бодлыг ойлгохыг би хүсдэг.","Чи өөрийнхөөрөө хүчтэй.","Чи алдаа гаргасан ч үнэ цэнээ алддаггүй.","Чиний дуртай зүйлсийг мэдэж авах дуртай.","Чамтай ирээдүйн тухай яримаар байдаг.","Чи надад урам өгдөг.","Чиний халамж сэтгэлд хүрдэг.","Чамайг баярлуулах жижиг зүйл бодох дуртай.","Чи миний хувьд давтагдашгүй.","Чамтай өнгөрүүлсэн цагийг би нандигнадаг."
+];
+const titles=["Чиний инээмсэглэл","Чи өөрийнхөөрөө","Чамтай өнгөрүүлэх мөч","Чиний зөөлөн сэтгэл","Миний дуртай хүн","Өнөөдрийн шалтгаан","Чамд зориулсан үг","Чиний мөрөөдөл","Чиний жижиг зуршил","Зүгээр л чи"];
+const dailyLines=[
+"Өнөөдөр юу ч болсон өөрийгөө битгий голоорой. Чи миний хувьд үнэ цэнтэй, хайрлагдах ёстой хүн.",
+"Чиний инээмсэглэлийг харах миний дуртай зүйлсийн нэг. Өнөөдөр ч бас инээмсэглээрэй, Ka минь.",
+"Чи бүхнийг төгс хийх албагүй. Амарч, өөртөө зөөлөн хандах эрхтэй шүү.",
+"Хол байсан ч чамайг бодож, сайн сайхныг чинь хүсдэг хүн бий гэдгийг санаарай.",
+"Чамтай хамт бүтээх дурсамж олон байгаа гэж бодохоор догдолдог.",
+"Өнөөдөр өөрийнхөө төлөө нэг сайхан зүйл хийгээрэй. Чи үүнийг хүртэх эрхтэй.",
+"Чиний жижигхэн баяр баясгалан хүртэл надад чухал. Өдөр чинь дулаахан өнгөрөөсэй.",
+"Чи миний амьдралд орж ирснээр энгийн мөчүүд илүү утгатай санагддаг.",
+"Ядарсан бол түр амар. Би чамайг зөвхөн хүчтэй үед чинь биш, амрах хэрэгтэй үед чинь ч ойлгохыг хүсдэг.",
+"Чамд хэлэх хамгийн чухал үг бол энэ: би чамайг хүндэлж, сонсож, хайрлахыг хүсдэг.",
+"Чи өнөөдөр өөртөө итгэлгүй байсан ч миний нүдээр бол хайрлагдах үнэ цэнтэй хүн хэвээрээ.",
+"Чамтай инээлдэх мөчүүдийг би дахин дахин мэдрэхийг хүсдэг.",
+"Чиний мөрөөдөл чухал. Би чамайг өөрийнхөөрөө өсөж, гэрэлтэхийг харах дуртай.",
+"Хэрвээ өнөөдөр хэцүү байвал бүхнийг ганцаараа үүрэх хэрэггүй. Ярилцаж болно шүү.",
+"Чи миний хувьд зүгээр нэг хүн биш, өдөрт минь дулаан нэмдэг онцгой хүн.",
+"Өнөөдөр чиний хийсэн жижигхэн хичээл зүтгэл ч үнэ цэнтэй.",
+"Би чамтай зөвхөн гоё өдрүүдийг биш, бодит амьдралын энгийн өдрүүдийг ч хуваалцмаар байна.",
+"Чиний инээхэд нүд чинь өөрчлөгддөг тэр мөч надад хөөрхөн санагддаг.",
+"Өнөөдөр өөрийгөө хайрлахаа битгий мартаарай. Чи халамжлуулах эрхтэй.",
+"Хайр гэдэг өдөр бүр сонгож, хүндэлж, сонсож байхыг хэлдэг гэж би боддог. Би үүнийг хичээнэ."
+];
+const cards=document.getElementById("reasonCards");
+for(let i=0;i<6;i++){const el=document.createElement("article");el.className="card";el.innerHTML='<div class="num">REASON '+String(i+1).padStart(3,"0")+'</div><h3>'+["Чиний инээмсэглэл","Чиний зан чанар","Чамтай байх мэдрэмж","Чиний мөрөөдөл","Чиний халамж","Чи өөрөө"][i]+'</h3><p>'+reasons[i]+'</p>';cards.appendChild(el)}
+let shownDate=new Date();
+function idx(d){const n=Math.floor((new Date(d.getFullYear(),d.getMonth(),d.getDate())-new Date(2026,9,1))/86400000);return ((n%365)+365)%365}
+function renderDay(d){const i=idx(d);document.getElementById("dateLabel").textContent=d.toLocaleDateString("mn-MN",{year:"numeric",month:"long",day:"numeric"}).toUpperCase();document.getElementById("dayTitle").textContent=titles[i%titles.length];document.getElementById("dailyText").textContent=dailyLines[i%dailyLines.length];document.getElementById("dayNumber").textContent=(i+1)+" / 365";}
+renderDay(shownDate);
+document.getElementById("prevDay").onclick=()=>{shownDate.setDate(shownDate.getDate()-1);renderDay(shownDate)};
+document.getElementById("nextDay").onclick=()=>{shownDate.setDate(shownDate.getDate()+1);renderDay(shownDate)};
+document.getElementById("todayBtn").onclick=()=>{shownDate=new Date();renderDay(shownDate)};
+const epoch=new Date(SETTINGS.togetherSince);
+function updateCounter(){const diff=Math.max(0,Date.now()-epoch.getTime());const d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);document.getElementById("days").textContent=d;document.getElementById("hours").textContent=String(h).padStart(2,"0");document.getElementById("minutes").textContent=String(m).padStart(2,"0");document.getElementById("seconds").textContent=String(s).padStart(2,"0");document.getElementById("counterLabel").textContent=epoch.toLocaleDateString("mn-MN",{year:"numeric",month:"long",day:"numeric"})+" өдрөөс хойш ♡";}
+updateCounter();setInterval(updateCounter,1000);
+const audio=document.getElementById("audio");if(SETTINGS.songUrl){audio.src=SETTINGS.songUrl;audio.style.display="block";document.getElementById("audioHint").style.display="none";}
+document.getElementById("secretForm").addEventListener("submit",e=>{e.preventDefault();const ok=document.getElementById("pw").value===SETTINGS.password;document.getElementById("msg").textContent=ok?"Нээгдлээ, Ka минь ♡":"Нууц үгээ дахин шалгаарай ♡";document.getElementById("secretText").classList.toggle("show",ok);});
+</script>
+</body></html>
